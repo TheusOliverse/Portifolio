@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aster</title>
+    <link rel="icon" href="https://www.svgrepo.com/show/402545/radioactive.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <video style="filter: blur(20px);" class="bgvid2" src="bg/fleeting-glides.1920x1080.mp4" plays-inline loop autoplay
+        muted type="video/mp4"></video>
+    <nav>
+        <video class="bgvid" src="bg/black-hole-in-cosmos.1920x1080.mp4" plays-inline loop autoplay muted
+            type="video/mp4"></video>
+
+        <header>
+            <div class="container">
+                <div class="op">
+                    <button onclick="addside()" class="opleft">
+                        <svg height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 506 506" xml:space="preserve"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <circle style="fill:#8b00fd;" cx="253" cy="253" r="253"></circle>
+                                <path style="fill:#324A5E;"
+                                    d="M364.1,252.4c7.8-9.1,14.6-18.3,20.3-27.3c20.1-31.7,24.3-58.7,12-75.9 c-13.8-19.3-45.9-21.9-85.6-10.3c-13.7-39-34.6-63.5-58.3-63.5s-44.6,24.5-58.3,63.5c-3.3-1-6.6-1.9-9.8-2.7 c-36.5-8.9-63.4-4.3-75.8,13c-16.4,22.8-2.5,62.3,32.2,103.2c-34.7,40.9-48.6,80.4-32.2,103.2c8.3,11.5,23,17.4,42.7,17.4 c9.8,0,20.9-1.5,33-4.4c3.2-0.8,6.5-1.7,9.8-2.7c13.7,39,34.6,63.5,58.3,63.5s44.6-24.5,58.3-63.5c15.6,4.6,30.1,7,42.7,7 c19.4,0,34.5-5.6,42.9-17.3c12.4-17.2,8.1-44.2-12-75.9C378.7,270.6,371.9,261.5,364.1,252.4z M353.4,144.6c15.5,0,26.9,4.1,32.6,12 c9,12.5,4.5,35-12.4,61.6c-5.1,8.1-11.2,16.3-18.1,24.5c-8.8-9.5-18.7-19-29.3-28.2c-2.1-23.3-6.1-44.8-11.6-63.6 C329.3,146.7,342.4,144.6,353.4,144.6z M289,303.2c-12.1,8.7-24.3,16.5-36.6,23.4c-11.9-6.7-24.1-14.5-36.4-23.4 c-8.9-6.4-17.2-12.8-24.9-19.3c-0.8-10.1-1.2-20.6-1.2-31.5s0.4-21.4,1.2-31.5c7.8-6.5,16-13,24.9-19.3 c12.4-8.9,24.6-16.7,36.5-23.4c12.2,6.9,24.5,14.8,36.5,23.4c8.7,6.2,17,12.7,24.9,19.4c0.8,10.1,1.2,20.6,1.2,31.5 c0,10.9-0.4,21.4-1.2,31.5C306.1,290.5,297.7,297,289,303.2z M312.2,301.8c-2.2,17.8-5.5,33.9-9.6,48.1c-11.6-4.1-24-9.5-36.9-16.1 c10.3-6.1,20.7-12.9,30.8-20.2C301.9,309.8,307.1,305.8,312.2,301.8z M239.3,333.8c-12.5,6.4-24.9,11.8-36.9,16.1 c-4.1-14.2-7.4-30.3-9.6-48c5.1,4,10.3,7.9,15.7,11.8C218.8,321,229.1,327.7,239.3,333.8z M177.6,272c-7.2-6.6-13.7-13.2-19.7-19.7 c6-6.5,12.5-13.1,19.7-19.7c-0.3,6.4-0.5,13-0.5,19.7S177.3,265.6,177.6,272z M192.8,202.9c2.2-17.8,5.5-33.9,9.6-48 c11.9,4.2,24.3,9.6,36.9,16.1c-10.2,6.1-20.5,12.8-30.8,20.1C203.1,195,197.9,198.9,192.8,202.9z M265.6,170.9 c12.9-6.7,25.3-12,36.9-16.1c4.1,14.2,7.4,30.3,9.6,48.1c-5.1-4-10.3-8-15.7-11.8C286.3,183.8,276,177.1,265.6,170.9z M327.5,232.8 c7,6.5,13.5,13,19.6,19.6c-6,6.6-12.6,13.1-19.6,19.6c0.3-6.4,0.4-13,0.4-19.6C327.9,245.7,327.8,239.2,327.5,232.8z M252.5,88.1 c16.7,0,34,20.1,46.2,54.6c-14.7,5.2-30.3,12.1-46.2,20.7c-15.7-8.5-31.2-15.5-46.2-20.8C218.5,108.2,235.9,88.1,252.5,88.1z M119.1,156.6c5.7-8,17-12.1,32.3-12.1c8.8,0,18.9,1.3,30,4c2.9,0.7,5.9,1.5,8.9,2.4c-5.5,18.8-9.5,40.2-11.6,63.5 c-10.8,9.3-20.6,18.8-29.4,28.2C118.4,205.7,107.6,172.6,119.1,156.6z M181.4,356.1c-30.6,7.4-53.4,4.5-62.3-8 c-11.5-16-0.7-49.2,30.4-86.2c8.8,9.5,18.6,18.9,29.4,28.2c2.1,23.3,6.1,44.8,11.6,63.5C187.3,354.6,184.4,355.4,181.4,356.1z M252.5,416.6c-16.7,0-34-20.1-46.2-54.6c14.9-5.3,30.5-12.3,46.2-20.8c15.9,8.6,31.5,15.6,46.2,20.7 C286.5,396.5,269.2,416.6,252.5,416.6z M386,348.1c-9.7,13.6-36.2,15.9-71.3,5.7c5.5-18.8,9.5-40.3,11.6-63.6 c10.6-9.2,20.4-18.6,29.3-28.2c6.9,8.2,13,16.4,18.1,24.5C390.5,313.1,395,335.6,386,348.1z">
+                                </path>
+                                <path style="fill:#4CDBC4;"
+                                    d="M390.5,133.4c-11.8,0-21.5,9.6-21.5,21.5c0,11.8,9.6,21.5,21.5,21.5s21.5-9.6,21.5-21.5 S402.4,133.4,390.5,133.4z">
+                                </path>
+                                <path style="fill:#E6E9EE;"
+                                    d="M252.5,398.5c-11.8,0-21.5,9.6-21.5,21.5c0,11.8,9.6,21.5,21.5,21.5S274,431.8,274,420 C274,408.1,264.4,398.5,252.5,398.5z">
+                                </path>
+                                <path style="fill:#84DBFF;"
+                                    d="M113.3,133.3c-11.8,0-21.5,9.6-21.5,21.5c0,11.8,9.6,21.5,21.5,21.5s21.5-9.6,21.5-21.5 C134.8,143,125.2,133.3,113.3,133.3z">
+                                </path>
+                                <circle style="fill:#FFD05B;" cx="252.6" cy="252.4" r="41.8"></circle>
+                            </g>
+                        </svg>
+                        <div style="display: flex;">
+                            <h1 style="color: #8b00fd;">As</h1>
+                            <h1 style="color: white;">ter</h1>
+                        </div>
+                    </button>
+                    <div class="opmid" id="opmid">
+                        <a class="mid" href="#sobre">Sobre</a>
+                        <a class="mid" href="#projetos">Projetos</a>
+                        <a class="mid" href="#skills">Skills</a>
+                    </div>
+                    <div class="opright">
+                        <a class="linkop" href="https://github.com/TheusOliverse" target="_blank"><ion-icon
+                                class="iconop" name="logo-github"></ion-icon></a>
+                        <a class="linkop" href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk"
+                            target="_blank"><ion-icon class="iconop" name="logo-instagram"></ion-icon></a>
+                        <a class="linkop" href="https://youtube.com/@math_oliver?feature=shared"
+                            target="_blank"><ion-icon class="iconop" name="logo-youtube"></ion-icon></a>
+                    </div>
+                    <div class="sidebar">
+                        <button onclick="addside()" style="background: none; border: none; cursor: pointer;">
+                            <ion-icon style="font-size: 30px; color: white;" name="menu-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="side addside" id="side">
+                    <button onclick="removeside()" style="position: fixed; top: 100px; font-size: 30px; left: 180px; border: none; 
+                    color: red; box-shadow: 0 0 10px black; background: #324a5e00;
+                    padding: 5px; display: flex; align-items: center; border-radius: 50%; cursor: pointer;
+                    backdrop-filter: blur(10px);"><ion-icon style="font-size: 30px;" name="close-circle-outline"></ion-icon></button>
+                    <h1>Tópicos</h1>
+                    <ul style="display: flex; flex-direction: column; gap: 20px;">
+                        <li style="display: flex; align-items: center; gap: 5px;">
+                            <ion-icon name="happy-outline"></ion-icon>
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 5px;">
+                            <ion-icon name="construct-outline"></ion-icon>
+                            <a href="#projetos">Projetos</a>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 5px;">
+                            <ion-icon name="school-outline"></ion-icon>
+                            <a href="#skills">Skills</a>
+                        </li>
+                    </ul>
+                    <h1>Contato</h1>
+                    <ul style="display: flex; flex-direction: column; gap: 20px;">
+                        <li class="org1">
+                            <a href="https://github.com/TheusOliverse" target="_blank"><ion-icon style="font-size: 25px;" name="logo-github"></ion-icon></a>
+                            <a href="https://github.com/TheusOliverse" target="_blank">GitHub</a>
+                        </li>
+                        <li class="org1">
+                            <a href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk" target="_blank"><ion-icon style="font-size: 25px;" name="logo-instagram"></ion-icon></a>
+                            <a href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk" target="_blank">Insatgram</a>
+                        </li>
+                        <li class="org1">
+                            <a href="https://youtube.com/@math_oliver?feature=shared" target="_blank"><ion-icon style="font-size: 25px;" name="logo-youtube"></ion-icon></a>
+                            <a href="https://youtube.com/@math_oliver?feature=shared" target="_blank">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tit_icon">
+                    <div class="titulo">
+                        <div class="prof">
+                            <ion-icon style="color: #8b00fd; filter: drop-shadow(0 0 5px black);"
+                                name="school-outline"></ion-icon>
+                            <h5>Professor & Programador</h5>
+                        </div>
+                        <div>
+                            <h5 style="filter: drop-shadow(0 0 5px black);">Matheus de Oliveira Costa</h5>
+                            <div class="flex">
+                                <h1 class="size_text" style="color: white; filter: drop-shadow(0 0 5px black);">Futuro
+                                </h1>
+                                <h1 class="size_text anicolor1" style="color: #8b00fd;">Professor</h1>
+                            </div>
+                            <div class="flex">
+                                <h1 class="size_text" style="color: white; filter: drop-shadow(0 0 5px black);">de</h1>
+                                <h1 class="size_text anicolor2" style="color: yellow;">Física</h1>
+                            </div>
+                        </div>
+                        <p class="p1" style="color: white; filter: drop-shadow(0 0 4px black);">Pela educação e pela
+                            ciência!</p>
+                    </div>
+                    <div class="icon_animado"
+                        style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                        <svg width="220px" class="gear" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                                <g>
+                                    <path class="st0"
+                                        d="M496,293.984c9.031-0.703,16-8.25,16-17.297v-41.375c0-9.063-6.969-16.594-16-17.313l-54.828-4.281 c-3.484-0.266-6.484-2.453-7.828-5.688l-18.031-43.516c-1.344-3.219-0.781-6.906,1.5-9.547l35.75-41.813 c5.875-6.891,5.5-17.141-0.922-23.547l-29.25-29.25c-6.406-6.406-16.672-6.813-23.547-0.922l-41.813,35.75 c-2.641,2.266-6.344,2.844-9.547,1.516l-43.531-18.047c-3.219-1.328-5.422-4.375-5.703-7.828l-4.266-54.813 C293.281,6.969,285.75,0,276.688,0h-41.375c-9.063,0-16.594,6.969-17.297,16.016l-4.281,54.813c-0.266,3.469-2.469,6.5-5.688,7.828 l-43.531,18.047c-3.219,1.328-6.906,0.75-9.563-1.516l-41.797-35.75c-6.875-5.891-17.125-5.484-23.547,0.922l-29.25,29.25 c-6.406,6.406-6.797,16.656-0.922,23.547l35.75,41.813c2.25,2.641,2.844,6.328,1.5,9.547l-18.031,43.516 c-1.313,3.234-4.359,5.422-7.813,5.688L16,218c-9.031,0.719-16,8.25-16,17.313v41.359c0,9.063,6.969,16.609,16,17.313l54.844,4.266 c3.453,0.281,6.5,2.484,7.813,5.703l18.031,43.516c1.344,3.219,0.75,6.922-1.5,9.563l-35.75,41.813 c-5.875,6.875-5.484,17.125,0.922,23.547l29.25,29.25c6.422,6.406,16.672,6.797,23.547,0.906l41.797-35.75 c2.656-2.25,6.344-2.844,9.563-1.5l43.531,18.031c3.219,1.344,5.422,4.359,5.688,7.844l4.281,54.813 c0.703,9.031,8.234,16.016,17.297,16.016h41.375c9.063,0,16.594-6.984,17.297-16.016l4.266-54.813 c0.281-3.484,2.484-6.5,5.703-7.844l43.531-18.031c3.203-1.344,6.922-0.75,9.547,1.5l41.813,35.75 c6.875,5.891,17.141,5.5,23.547-0.906l29.25-29.25c6.422-6.422,6.797-16.672,0.922-23.547l-35.75-41.813 c-2.25-2.641-2.844-6.344-1.5-9.563l18.031-43.516c1.344-3.219,4.344-5.422,7.828-5.703L496,293.984z M256,342.516 c-23.109,0-44.844-9-61.188-25.328c-16.344-16.359-25.344-38.078-25.344-61.203c0-23.109,9-44.844,25.344-61.172 c16.344-16.359,38.078-25.344,61.188-25.344c23.125,0,44.844,8.984,61.188,25.344c16.344,16.328,25.344,38.063,25.344,61.172 c0,23.125-9,44.844-25.344,61.203C300.844,333.516,279.125,342.516,256,342.516z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <a href="#contato2" class="contato"><ion-icon name="mail-outline"></ion-icon>Contate-me!</a>
+                    </div>
+                </div>
+                <div class="role anicolor1" style="text-align: center;">
+                    <h4>Mais</h4>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="grad"></div>
+        </header>
+        <div class="grad2">
+
+        </div>
+
+        <main>
+            <section class="sobre" id="sobre">
+                <h2 style="display: flex; align-items: center; gap: 5px;" class="size_text2">Olá, visitante! <ion-icon
+                        class="size_text2" name="happy-outline"></ion-icon></h2>
+                <div class="itenslist">
+                    <ul style="display: flex; flex-direction: column; gap: 10px; list-style-type: none;">
+                        <li class="lista1">
+                            <div class="caixa">
+                                <ion-icon style="font-size: 50px;" name="code-slash-outline"></ion-icon>
+                                <h1>Front - End</h1>
+                                <p class="p2">Sou um desenvolvedor Front-End e WebDesigner. Formado pela Rocketseat</p>
+                            </div>
+                            <div class="caixa">
+                                <ion-icon style="font-size: 50px;" name="book-outline"></ion-icon>
+                                <h1>Web Lib</h1>
+                                <p class="p2">Possuo uma biblioteca virtual. Ela está liberada gratuitamente.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caixa2">
+                                <ion-icon style="font-size: 60px;" name="school-outline"></ion-icon>
+                                <h1>Meu Interesse Pela Educação</h1>
+                                <p class="p2">Desde os meus 15 anos venho me aperfeiçoando e lutando para me tornar um
+                                    professor. Quero mudar este país!</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="caixa3">
+                        <ion-icon style="font-size: 160px;" name="earth-outline"></ion-icon>
+                        <h1>Inspiração</h1>
+                        <p class="p2">Vejo alguns canais de ciência que me inspirou no ramo da Física, Matemática e
+                            programação. Estou buscando ser cada vez melhor e chegar ao topo! Não é uma tarefa fácil,
+                            mas é justamente isso que torna o caminho do aprendizado divertido e mais emocionante. Estou
+                            fazendo o que posso, e acredito que eu estou fazendo a diferença.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos">
+                <h1 style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                    Meus Projetos
+                    <ion-icon class="size_text2" name="construct-outline"></ion-icon>
+                </h1>
+
+                <ul style="list-style-type: none;">
+                    <li class="caixa_pro">
+                        <img src="bg/projeto1.jpg" class="img_pro">
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; gap: 5px;">
+                                <h1>Criação de</h1>
+                                <h1 class="anicolor1">Portifólio</h1>
+                                <h1>pessoal</h1>
+                            </div>
+
+                            <p class="p3">Como podemos ver, este próprio site é o meu portifólio pessoal, desenvolvido
+                                por mim. Um projeto que demonstra o meu nível em Web Design.</p>
+
+                            <a href="#" target="_blank" style="display: flex; align-items: center; gap: 5px;"
+                                class="visitar"><ion-icon name="arrow-redo-outline"></ion-icon>Visitar</a>
+                        </div>
+                    </li>
+                    <li class="caixa_pro">
+                        <img src="bg/projeto2.jpg" class="img_pro">
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; gap: 5px;">
+                                <h1>Aplicação</h1>
+                                <h1 class="anicolor1">Científica</h1>
+                                <h1>Educacional</h1>
+                            </div>
+
+                            <p class="p3">Desenvolvi uma aplicação para calcular determinante de matrizes 2x2 e 3x3, com
+                                intuito de facilitar alguns cálculos e melhorar a minha habilidade com JavaScript.</p>
+
+                            <a href="https://theusoliverse.github.io/C-lculo-de-Determinante/" target="_blank"
+                                style="display: flex; align-items: center; gap: 5px;" class="visitar"><ion-icon
+                                    name="arrow-redo-outline"></ion-icon>Visitar</a>
+                        </div>
+                    </li>
+                    <li class="caixa_pro">
+                        <img src="bg/projeto3.jpg" class="img_pro">
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; gap: 5px;">
+                                <h1>O Projeto</h1>
+                                <h1 class="anicolor1">MasterMind</h1>
+                                <h1></h1>
+                            </div>
+
+                            <p class="p3">O projeto MasterMind é uma forma divertida de mostrar como um grupo de pessoas
+                                pode evoluir ao longo dos anos, saindo do foco de jogos para os estudos.</p>
+                            <a href="https://theusoliverse.github.io/MasterMind/" target="_blank"
+                                style="display: flex; align-items: center; gap: 5px;" class="visitar"><ion-icon
+                                    name="arrow-redo-outline"></ion-icon>Visitar</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="skills" id="skills">
+                <h1 style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                    Habilidades (Skills)<ion-icon class="size_text2" name="school-outline"></ion-icon></h1>
+                <div class="skills_itens">
+                    <div class="caixa_skill">
+                        <h1 class="anicolor1" style="font-size: 30px; align-items: center; display: flex; gap: 10px;">
+                            Professor <ion-icon style="font-size: 40px;" name="planet-outline"></ion-icon></h1>
+                        <p>Busco ensinar os conceitos básicos da Física e da Matemática de uma forma simples.</p>
+                    </div>
+                    <div class="midicon">
+                        <svg class="gear" width="100px" height="100px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <circle cx="12" cy="12" r="2" stroke="#ffffff" stroke-width="1.5"></circle>
+                                <path d="M12 10C17 10 16.6 22 9 22" stroke="#ffffff" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                <path d="M12.3115 14C7.31152 14 7.71152 2 15.3115 2" stroke="#ffffff" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                <path opacity="0.5" d="M10.6313 10.6961C14.1669 7.16053 22.3693 15.9287 16.9953 21.3027"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2">
+                                </path>
+                                <path opacity="0.5" d="M13.6802 13.3039C10.1447 16.8395 1.94222 8.07135 7.31623 2.69734"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2">
+                                </path>
+                                <path opacity="0.5" d="M10.8516 13.5242C7.31605 9.98865 16.0842 1.78622 21.4582 7.16023"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2">
+                                </path>
+                                <path opacity="0.5" d="M13.4599 10.4758C16.9955 14.0113 8.22736 22.2138 2.85334 16.8398"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2">
+                                </path>
+                                <path d="M10 12.3115C10 7.31152 22 7.71152 22 15.3115" stroke="#ffffff"
+                                    stroke-width="1.5" stroke-linecap="round"></path>
+                                <path d="M14 12C14 17 2 16.6 2 9" stroke="#ffffff" stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="caixa_skill">
+                        <h1 class="anicolor1" style="font-size: 30px; display: flex; align-items: center; gap: 10px;">
+                            Dev <ion-icon style="font-size: 30px;" name="desktop-outline"></ion-icon></h1>
+                        <p>Sou um desenvolvedor web, mas estou estudando para ser um desenvolvedor Back-End e aplicar
+                            aos meus projetos.</p>
+                    </div>
+                </div>
+
+                <div class="skills_itens">
+                    <div class="caixa_skill">
+                        <h1 class="anicolor1" style="font-size: 30px; align-items: center; display: flex; gap: 10px;">
+                            Fotógrafo <ion-icon style="font-size: 40px;" name="camera-outline"></ion-icon></h1>
+                        <p>No meu tempo livre eu aproveito para fazer ótimas fotografias. O meu instagram está com
+                            várias demonstrações.</p>
+                    </div>
+
+                    <div class="caixa_skill">
+                        <h1 class="anicolor1" style="font-size: 30px; display: flex; align-items: center; gap: 10px;">
+                            Editor <ion-icon style="font-size: 40px;" name="image-outline"></ion-icon></h1>
+                        <p>Sei editar fotos e vídeos, e eu posso criar edições com estilos variados, desde cinemática
+                            até estilo anos 70 ou anos 90.</p>
+                    </div>
+
+                    <div class="caixa_skill">
+                        <h1 class="anicolor1" style="font-size: 30px; display: flex; align-items: center; gap: 10px;">
+                            Escritor <ion-icon style="font-size: 40px;" name="reader-outline"></ion-icon></h1>
+                        <p>Escrevi alguns livros que me renderam um bom lucro. Todos são obras de divulgação científica.
+                            Pretendo criar novas obras!</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="contato2" id="contato2">
+                <h1 style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                    Vamos conversar!
+                    <ion-icon class="size_text2" name="mail-outline"></ion-icon>
+                </h1>
+                <form id="form" action="https://formsubmit.co/matholiversecontato@gmail.com" method="post">
+                    <div>
+                        <h1 class="menssagem">Mande uma mensagem.</h1>
+                    </div>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" required placeholder="nome@gmail.com">
+                    <label for="message"></label>
+                    <input type="text" name="message" id="message" required placeholder="Texto...">
+
+                    <div class="botoes">
+                        <button class="send" type="submit">
+                            <ion-icon class="enviar" name="paper-plane-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <p>Deseja algum serviço? Trocar uma ideia? Estou aqui para ler as suas mensagens.</p>
+                </form>
+            </section>
+        </main>
+
+        <footer style="display: flex; justify-content: space-between; padding: 20px 50px; background: white;">
+            <a href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk" target="_blank"
+                class="link1">Instagram<ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://discord.gg/FF9TFgcEme" target="_blank" class="link1">Discord<ion-icon
+                    name="logo-discord"></ion-icon></a>
+            <a href="https://github.com/TheusOliverse" target="_blank" class="link1">GitHub<ion-icon
+                    name="logo-github"></ion-icon></a>
+            <a href="https://youtube.com/@math_oliver?feature=shared" target="_blank" class="link1">YouTube<ion-icon
+                    name="logo-youtube"></ion-icon></a>
+        </footer>
+    </nav>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
