@@ -12,12 +12,13 @@
 
 <body>
     <video style="filter: blur(20px);" class="bgvid2" src="bg/fleeting-glides.1920x1080.mp4" plays-inline loop autoplay
-        muted type="video/mp4"></video>
+    muted type="video/mp4"></video>
+
     <nav>
         <video class="bgvid" src="bg/black-hole-in-cosmos.1920x1080.mp4" plays-inline loop autoplay muted
             type="video/mp4"></video>
 
-        <header>
+        <header id="header">
             <div class="container">
                 <div class="op">
                     <button onclick="addside()" class="opleft">
@@ -104,7 +105,7 @@
                     </ul>
                 </div>
                 <div class="tit_icon">
-                    <div class="titulo">
+                    <div id="titulo" class="titulo">
                         <div class="prof">
                             <ion-icon style="color: #8b00fd; filter: drop-shadow(0 0 5px black);"
                                 name="school-outline"></ion-icon>
@@ -125,7 +126,7 @@
                         <p class="p1" style="color: white; filter: drop-shadow(0 0 4px black);">Pela educação e pela
                             ciência!</p>
                     </div>
-                    <div class="icon_animado"
+                    <div id="icon_animado" class="icon_animado"
                         style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                         <svg width="220px" class="gear" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"
@@ -148,12 +149,15 @@
                         <a href="#contato2" class="contato"><ion-icon name="mail-outline"></ion-icon>Contate-me!</a>
                     </div>
                 </div>
-                <div class="role anicolor1" style="text-align: center;">
+                <div class="dev dev2" id="dev">
+                    <h1 class="anicolor1">As</h1>
+                    <h1 class="anicolor2">ter</h1>
+                </div>
+                <div class="role anicolor1" id="role" style="text-align: center;">
                     <h4>Mais</h4>
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </div>
             </div>
-            <div class="grad"></div>
         </header>
         <div class="grad2">
 
@@ -161,24 +165,24 @@
 
         <main>
             <section class="sobre" id="sobre">
-                <h2 style="display: flex; align-items: center; gap: 5px;" class="size_text2">Olá, visitante! <ion-icon
-                        class="size_text2" name="happy-outline"></ion-icon></h2>
+                <h2 id="ola" style="display: flex; align-items: center; gap: 5px;" class="size_text2">Olá, visitante! <ion-icon
+                    class="size_text2" name="happy-outline"></ion-icon></h2>
                 <div class="itenslist">
                     <ul style="display: flex; flex-direction: column; gap: 10px; list-style-type: none;">
                         <li class="lista1">
-                            <div class="caixa">
-                                <ion-icon style="font-size: 50px;" name="code-slash-outline"></ion-icon>
-                                <h1>Front - End</h1>
-                                <p class="p2">Sou um desenvolvedor Front-End e WebDesigner. Formado pela Rocketseat</p>
+                            <div class="caixa" id="caixa">
+                                <ion-icon class="filtroB" style="font-size: 50px;" name="code-slash-outline"></ion-icon>
+                                <h1 class="anicolor2">Front - End</h1>
+                                <p class="p2 filtroP">Sou um desenvolvedor Front-End e WebDesigner. Formado pela Rocketseat</p>
                             </div>
-                            <div class="caixa">
+                            <div class="caixa" id="caixa4">
                                 <ion-icon style="font-size: 50px;" name="book-outline"></ion-icon>
                                 <h1>Web Lib</h1>
                                 <p class="p2">Possuo uma biblioteca virtual. Ela está liberada gratuitamente.</p>
                             </div>
                         </li>
                         <li>
-                            <div class="caixa2">
+                            <div class="caixa2" id="caixa2">
                                 <ion-icon style="font-size: 60px;" name="school-outline"></ion-icon>
                                 <h1>Meu Interesse Pela Educação</h1>
                                 <p class="p2">Desde os meus 15 anos venho me aperfeiçoando e lutando para me tornar um
@@ -186,7 +190,7 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="caixa3">
+                    <div id="caixa3" class="caixa3">
                         <ion-icon style="font-size: 160px;" name="earth-outline"></ion-icon>
                         <h1>Inspiração</h1>
                         <p class="p2">Vejo alguns canais de ciência que me inspirou no ramo da Física, Matemática e
@@ -198,13 +202,13 @@
             </section>
 
             <section id="projetos">
-                <h1 style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                <h1 id="proje" style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
                     Meus Projetos
                     <ion-icon class="size_text2" name="construct-outline"></ion-icon>
                 </h1>
 
                 <ul style="list-style-type: none;">
-                    <li class="caixa_pro">
+                    <li id="proje1" class="caixa_pro">
                         <img src="bg/projeto1.jpg" class="img_pro">
                         <div style="display: flex; flex-direction: column; gap: 20px;">
                             <div style="display: flex; gap: 5px;">
@@ -220,7 +224,7 @@
                                 class="visitar"><ion-icon name="arrow-redo-outline"></ion-icon>Visitar</a>
                         </div>
                     </li>
-                    <li class="caixa_pro">
+                    <li id="proje2" class="caixa_pro">
                         <img src="bg/projeto2.jpg" class="img_pro">
                         <div style="display: flex; flex-direction: column; gap: 20px;">
                             <div style="display: flex; gap: 5px;">
@@ -237,7 +241,7 @@
                                     name="arrow-redo-outline"></ion-icon>Visitar</a>
                         </div>
                     </li>
-                    <li class="caixa_pro">
+                    <li id="proje3" class="caixa_pro">
                         <img src="bg/projeto3.jpg" class="img_pro">
                         <div style="display: flex; flex-direction: column; gap: 20px;">
                             <div style="display: flex; gap: 5px;">
@@ -257,9 +261,9 @@
             </section>
 
             <section class="skills" id="skills">
-                <h1 style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                <h1 id="skill" style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
                     Habilidades (Skills)<ion-icon class="size_text2" name="school-outline"></ion-icon></h1>
-                <div class="skills_itens">
+                <div id="skill1" class="skills_itens">
                     <div class="caixa_skill">
                         <h1 class="anicolor1" style="font-size: 30px; align-items: center; display: flex; gap: 10px;">
                             Professor <ion-icon style="font-size: 40px;" name="planet-outline"></ion-icon></h1>
@@ -304,21 +308,21 @@
                 </div>
 
                 <div class="skills_itens">
-                    <div class="caixa_skill">
+                    <div id="skill2" class="caixa_skill">
                         <h1 class="anicolor1" style="font-size: 30px; align-items: center; display: flex; gap: 10px;">
                             Fotógrafo <ion-icon style="font-size: 40px;" name="camera-outline"></ion-icon></h1>
                         <p>No meu tempo livre eu aproveito para fazer ótimas fotografias. O meu instagram está com
                             várias demonstrações.</p>
                     </div>
 
-                    <div class="caixa_skill">
+                    <div id="skill3" class="caixa_skill">
                         <h1 class="anicolor1" style="font-size: 30px; display: flex; align-items: center; gap: 10px;">
                             Editor <ion-icon style="font-size: 40px;" name="image-outline"></ion-icon></h1>
                         <p>Sei editar fotos e vídeos, e eu posso criar edições com estilos variados, desde cinemática
                             até estilo anos 70 ou anos 90.</p>
                     </div>
 
-                    <div class="caixa_skill">
+                    <div id="skill4" class="caixa_skill">
                         <h1 class="anicolor1" style="font-size: 30px; display: flex; align-items: center; gap: 10px;">
                             Escritor <ion-icon style="font-size: 40px;" name="reader-outline"></ion-icon></h1>
                         <p>Escrevi alguns livros que me renderam um bom lucro. Todos são obras de divulgação científica.
@@ -329,7 +333,7 @@
             </section>
 
             <section class="contato2" id="contato2">
-                <h1 style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                <h1 id="ms" style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
                     Vamos conversar!
                     <ion-icon class="size_text2" name="mail-outline"></ion-icon>
                 </h1>
