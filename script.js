@@ -167,7 +167,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("skill4").style.scale = '0%';
     }
 })
-
+document.getElementById("role").style.display = 'none'
 window.addEventListener('scroll', () => {
     if (window.scrollY > 2500) {
         document.getElementById("ms").style.transition = '1s';
