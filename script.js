@@ -181,7 +181,7 @@ window.addEventListener('scroll', () => {
 })
 document.getElementById("fundo").classList.remove("fundo2")
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 700) {
+    if (window.scrollY > 750) {
         document.getElementById("fundo").classList.add("fundo2");
     } else {
         document.getElementById("fundo").classList.remove("fundo2");
