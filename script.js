@@ -27,7 +27,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("dev").classList.remove("dev2");
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 560) {
         document.getElementById("caixa3").classList.remove("caixaani");
@@ -35,7 +34,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("caixa3").classList.add("caixaani");
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 550) {
         document.getElementById("caixa4").classList.remove("caixaani");
@@ -43,7 +41,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("caixa4").classList.add("caixaani");
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 500) {
         document.getElementById("caixa").classList.remove("caixaani");
@@ -51,7 +48,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("caixa").classList.add("caixaani");
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 550) {
         document.getElementById("caixa2").classList.remove("caixaani");
@@ -59,7 +55,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("caixa2").classList.add("caixaani");
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 140) {
         document.getElementById("ola").style.transition = '1s';
@@ -69,7 +64,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("ola").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1000) {
         document.getElementById("proje").style.transition = '1s';
@@ -79,7 +73,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("proje").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1100) {
         document.getElementById("proje1").style.transition = '1s';
@@ -89,7 +82,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("proje1").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1300) {
         document.getElementById("proje2").style.transition = '1s';
@@ -99,7 +91,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("proje2").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1500) {
         document.getElementById("proje3").style.transition = '1s';
@@ -109,7 +100,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("proje3").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1800) {
         document.getElementById("skill").style.transition = '1s';
@@ -119,7 +109,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("skill").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1900) {
         document.getElementById("skill1").style.transition = '1s';
@@ -129,7 +118,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("skill1").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 2100) {
         document.getElementById("skill2").style.transition = '1s';
@@ -139,7 +127,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("skill2").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 2200) {
         document.getElementById("skill3").style.transition = '1s';
@@ -149,7 +136,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("skill3").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 2300) {
         document.getElementById("skill4").style.transition = '1s';
@@ -157,6 +143,15 @@ window.addEventListener('scroll', () => {
     } else {
         document.getElementById("skill4").style.transition = '1s';
         document.getElementById("skill4").style.scale = '0%';
+    }
+})
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 2400) {
+        document.getElementById("skill5").style.transition = '1s';
+        document.getElementById("skill5").style.scale = '100%';
+    } else {
+        document.getElementById("skill5").style.transition = '1s';
+        document.getElementById("skill5").style.scale = '0%';
     }
 })
 document.getElementById("role").style.display = 'none'
@@ -169,7 +164,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("ms").style.scale = '0%';
     }
 })
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 2600) {
         document.getElementById("form").style.transition = '1s';
