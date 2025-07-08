@@ -179,3 +179,11 @@ window.addEventListener('scroll', () => {
         document.getElementById("form").style.scale = '0%';
     }
 })
+document.getElementById("fundo").classList.remove("fundo2")
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 700) {
+        document.getElementById("fundo").classList.add("fundo2");
+    } else {
+        document.getElementById("fundo").classList.remove("fundo2");
+    }
+})

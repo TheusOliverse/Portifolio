@@ -39,7 +39,7 @@ html {
     max-height: 100%;
     width: auto;
     height: auto;
-    z-index: -2;
+    z-index: -3;
     object-fit: cover;
 }
 
@@ -641,4 +641,18 @@ input {
     justify-content: center;
     margin-top: -95px;
     
+}
+
+.fundo{
+    transition: 1s;
+    z-index: -2;
+    position: fixed;
+    width: 100%;
+    height: 110vh;
+    background: black;
+}
+
+.fundo2{
+    transition: 1s;
+    background: rgba(0, 0, 0, 0);
 }
