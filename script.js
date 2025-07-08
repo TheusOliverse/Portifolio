@@ -1,11 +1,11 @@
 const add = document.getElementById("side");
 
 function addside() {
-    add.classList.remove("addside");
+    add.classList.toggle("addside");
 }
 
 function removeside() {
-    add.classList.add("addside");
+    add.classList.toggle("addside");
 }
 
 //animação de interface
@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
 })
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 600) {
+    if (window.scrollY > 560) {
         document.getElementById("caixa3").classList.remove("caixaani");
     } else {
         document.getElementById("caixa3").classList.add("caixaani");
@@ -53,15 +53,7 @@ window.addEventListener('scroll', () => {
 })
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 700) {
-        document.getElementById("caixa2").classList.remove("caixaani");
-    } else {
-        document.getElementById("caixa2").classList.add("caixaani");
-    }
-})
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 700) {
+    if (window.scrollY > 550) {
         document.getElementById("caixa2").classList.remove("caixaani");
     } else {
         document.getElementById("caixa2").classList.add("caixaani");

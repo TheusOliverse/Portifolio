@@ -624,3 +624,21 @@ input {
     align-items: center;
     color: black;
 }
+
+.link_yt{
+    border: 2px solid rgba(89, 0, 255, 0.652);
+    width: 250px;
+    box-shadow: 0 0 10px white;
+}
+
+.iconyt{
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -95px;
+    
+}

@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <video style="filter: blur(20px);" class="bgvid2" src="bg/fleeting-glides.1920x1080.mp4" plays-inline loop autoplay
-    muted type="video/mp4"></video>
+    <video style="filter: blur(10px);" class="bgvid2" src="bg/fleeting-glides.1920x1080.mp4" plays-inline loop autoplay
+        muted type="video/mp4"></video>
 
     <nav>
         <video class="bgvid" src="bg/black-hole-in-cosmos.1920x1080.mp4" plays-inline loop autoplay muted
             type="video/mp4"></video>
 
-        <header id="header">
+        <header style="background: black;" id="header">
             <div class="container">
                 <div class="op">
                     <button onclick="addside()" class="opleft">
@@ -72,7 +72,8 @@
                     <button onclick="removeside()" style="position: fixed; top: 100px; font-size: 30px; left: 180px; border: none; 
                     color: red; box-shadow: 0 0 10px black; background: #324a5e00;
                     padding: 5px; display: flex; align-items: center; border-radius: 50%; cursor: pointer;
-                    backdrop-filter: blur(10px);"><ion-icon style="font-size: 30px;" name="close-circle-outline"></ion-icon></button>
+                    backdrop-filter: blur(10px);"><ion-icon style="font-size: 30px;"
+                            name="close-circle-outline"></ion-icon></button>
                     <h1>Tópicos</h1>
                     <ul style="display: flex; flex-direction: column; gap: 20px;">
                         <li style="display: flex; align-items: center; gap: 5px;">
@@ -91,15 +92,19 @@
                     <h1>Contato</h1>
                     <ul style="display: flex; flex-direction: column; gap: 20px;">
                         <li class="org1">
-                            <a href="https://github.com/TheusOliverse" target="_blank"><ion-icon style="font-size: 25px;" name="logo-github"></ion-icon></a>
+                            <a href="https://github.com/TheusOliverse" target="_blank"><ion-icon
+                                    style="font-size: 25px;" name="logo-github"></ion-icon></a>
                             <a href="https://github.com/TheusOliverse" target="_blank">GitHub</a>
                         </li>
                         <li class="org1">
-                            <a href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk" target="_blank"><ion-icon style="font-size: 25px;" name="logo-instagram"></ion-icon></a>
-                            <a href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk" target="_blank">Insatgram</a>
+                            <a href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk"
+                                target="_blank"><ion-icon style="font-size: 25px;" name="logo-instagram"></ion-icon></a>
+                            <a href="https://www.instagram.com/theus_oliverse_?igsh=cnhsZmZua3I0YXlk"
+                                target="_blank">Insatgram</a>
                         </li>
                         <li class="org1">
-                            <a href="https://youtube.com/@math_oliver?feature=shared" target="_blank"><ion-icon style="font-size: 25px;" name="logo-youtube"></ion-icon></a>
+                            <a href="https://youtube.com/@math_oliver?feature=shared" target="_blank"><ion-icon
+                                    style="font-size: 25px;" name="logo-youtube"></ion-icon></a>
                             <a href="https://youtube.com/@math_oliver?feature=shared" target="_blank">YouTube</a>
                         </li>
                     </ul>
@@ -159,30 +164,52 @@
                 </div>
             </div>
         </header>
-
+        <div
+            style="background: black; display: flex; flex-wrap: wrap-reverse; justify-content: center; gap: 30px; padding: 60px 0px; align-items: center;">
+            <a href="https://youtu.be/pQyQiubkjHw" class="linkyt" target="_blank">
+                <video class="link_yt" src="./bg/yt.mp4" plays-inline loop autoplay muted type="video/mp4"></video>
+                <div class="iconyt">
+                    <ion-icon style="color: red; filter: drop-shadow(0 0 5px white); font-size: 30px;"
+                        name="logo-youtube"></ion-icon>
+                    <p style="filter: drop-shadow(0 0 5px black);">Assistir completo</p>
+                </div>
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 10px; justify-content: center;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <h1>Me visite no</h1>
+                    <h1 style="color: red; filter: drop-shadow(0 0 5px red);">YouTube!</h1>
+                </div>
+                <p>Faço tutoriais acelerados e em breve postarei aulas.</p>
+            </div>
+        </div>
+        <div style="width: 100%; background: linear-gradient(180deg, black, rgba(6, 0, 0, 0)); height: 70px;"></div>
         <main>
             <section class="sobre" id="sobre">
-                <h2 id="ola" style="display: flex; align-items: center; gap: 5px;" class="size_text2">Olá, visitante! <ion-icon
-                    class="size_text2" name="happy-outline"></ion-icon></h2>
+                <h2 id="ola" style="display: flex; align-items: center; gap: 5px;" class="size_text2">Olá, visitante!
+                    <ion-icon class="size_text2" name="happy-outline"></ion-icon></h2>
                 <div class="itenslist">
                     <ul style="display: flex; flex-direction: column; gap: 10px; list-style-type: none;">
                         <li class="lista1">
                             <div class="caixa" id="caixa">
-                                <ion-icon class="anicolor2" style="font-size: 50px;" name="code-slash-outline"></ion-icon>
+                                <ion-icon class="anicolor2" style="font-size: 50px;"
+                                    name="code-slash-outline"></ion-icon>
                                 <h1 class="anicolor2">Front - End</h1>
-                                <p class="p2 filtroP">Sou um desenvolvedor Front-End e WebDesigner. Formado pela Rocketseat</p>
+                                <p class="p2 filtroP">Sou um desenvolvedor Front-End e WebDesigner. Formado pela
+                                    Rocketseat</p>
                             </div>
                             <div class="caixa" id="caixa4">
                                 <ion-icon class="anicolor1" style="font-size: 50px;" name="book-outline"></ion-icon>
                                 <h1 class="anicolor1">Web Lib</h1>
-                                <p class="p2 filtroP">Possuo uma biblioteca virtual. Ela está liberada gratuitamente.</p>
+                                <p class="p2 filtroP">Possuo uma biblioteca virtual. Ela está liberada gratuitamente.
+                                </p>
                             </div>
                         </li>
                         <li>
                             <div class="caixa2" id="caixa2">
                                 <ion-icon class="anicolor1" style="font-size: 60px;" name="school-outline"></ion-icon>
                                 <h1 class="anicolor1">Meu Interesse Pela Educação</h1>
-                                <p class="p2 filtroP">Desde os meus 15 anos venho me aperfeiçoando e lutando para me tornar um
+                                <p class="p2 filtroP">Desde os meus 15 anos venho me aperfeiçoando e lutando para me
+                                    tornar um
                                     professor. Quero mudar este país!</p>
                             </div>
                         </li>
@@ -190,7 +217,8 @@
                     <div id="caixa3" class="caixa3">
                         <ion-icon class="anicolor2" style="font-size: 160px;" name="earth-outline"></ion-icon>
                         <h1 class="anicolor2">Inspiração</h1>
-                        <p class="p2 filtroP">Vejo alguns canais de ciência que me inspirou no ramo da Física, Matemática e
+                        <p class="p2 filtroP">Vejo alguns canais de ciência que me inspirou no ramo da Física,
+                            Matemática e
                             programação. Estou buscando ser cada vez melhor e chegar ao topo! Não é uma tarefa fácil,
                             mas é justamente isso que torna o caminho do aprendizado divertido e mais emocionante. Estou
                             fazendo o que posso, e acredito que eu estou fazendo a diferença.</p>
@@ -199,7 +227,8 @@
             </section>
 
             <section id="projetos">
-                <h1 id="proje" style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                <h1 id="proje" style="display: flex; align-items: center; gap: 5px; justify-content: center;"
+                    class="size_text2">
                     Meus Projetos
                     <ion-icon class="size_text2" name="construct-outline"></ion-icon>
                 </h1>
@@ -258,7 +287,8 @@
             </section>
 
             <section class="skills" id="skills">
-                <h1 id="skill" style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                <h1 id="skill" style="display: flex; align-items: center; gap: 5px; justify-content: center;"
+                    class="size_text2">
                     Habilidades (Skills)<ion-icon class="size_text2" name="school-outline"></ion-icon></h1>
                 <div id="skill1" class="skills_itens">
                     <div class="caixa_skill">
@@ -330,7 +360,8 @@
             </section>
 
             <section class="contato2" id="contato2">
-                <h1 id="ms" style="display: flex; align-items: center; gap: 5px; justify-content: center;" class="size_text2">
+                <h1 id="ms" style="display: flex; align-items: center; gap: 5px; justify-content: center;"
+                    class="size_text2">
                     Vamos conversar!
                     <ion-icon class="size_text2" name="mail-outline"></ion-icon>
                 </h1>
