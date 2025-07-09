@@ -60,8 +60,6 @@ function update() {
 }
 update();
 
-
-
 //Cinematica
 document.getElementById("assunto1").style.display = 'none';
 document.getElementById("cine2").style.display = 'none';
@@ -126,4 +124,9 @@ function update2() {
 
 update2();
 
-//deformação
+//sidebar
+const add_side = document.getElementById("addside")
+add_side.addEventListener('click', () => {
+  document.getElementById("side").classList.toggle("add_side");
+  document.getElementById("side").classList.toggle("op1");
+})

@@ -11,7 +11,8 @@
 
 <body>
     <header>
-        <div style="display: flex; align-items: center; gap: 15px; font-size: 30px; flex-wrap: wrap; width: 100%; justify-content: center;">
+        <div
+            style="display: flex; align-items: center; gap: 15px; font-size: 30px; flex-wrap: wrap; width: 100%; justify-content: center;">
             <h1 class="anicolor1">Physics</h1>
             <h1 class="filtroB">&</h1>
             <h1 class="anicolor2">Math</h1>
@@ -25,6 +26,30 @@
                 <a href="#physics">Physics</a>
                 <a href="#livros" style="color: red;">Livros</a>
             </div>
+            <button class="addside" id="addside">
+                <ion-icon style="font-size: 40px; padding: 20px;" name="menu-outline"></ion-icon>
+            </button>
+        </div>
+
+        <div id="side" class="side add_side">
+            <ul style="display: flex; flex-direction: column; gap: 20px;">
+                <h1 class="anicolor3">Tópicos</h1>
+                <li style="display: flex; flex-direction: column; gap: 10px; padding: 0px 15px;">
+                    <a class="opside filtroB href=" #desc">Descrição</a>
+                    <a class="opside filtroB" href="#math" style="color: red;">Math</a>
+                    <a class="opside filtroB" href="#physics">Physics</a>
+                    <a class="opside filtroB" href="#livros" style="color: red;">Livros</a>
+                </li>
+                <h1 class="anicolor3">Physics</h1>
+                <li style="display: flex; flex-direction: column; gap: 10px; padding: 0px 15px;">
+                    <a href="#cinematica" class="opside filtroB">Cinemática</a>
+                    <a href="#dinamica" class="opside filtroB">Dinâmica</a>
+                    <a href="#termologia" class="opside filtroB">Termologia</a>
+                    <a href="#optica" class="opside filtroB">Óptica</a>
+                    <a href="#ondulatoria" class="opside filtroB">Ondulatória</a>
+                    <a href="#eletricidade" class="opside filtroB">Eletricidade</a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -99,7 +124,7 @@
                 Observe os itens abaixo e tente compreender a leitura.
             </p>
             <ul class="org2">
-                <li class="lista1">
+                <li id="cinematica" class="lista1">
                     <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/XH3ZREXEBRCAXMJEGDRN7G4N3U.jpg"
                         class="img1">
                     <div style="display: flex; flex-direction: column; gap: 20px;">
@@ -269,12 +294,14 @@
                         </div>
                         <p>
                             Utilizando a expressão do MRUV, podemos adapatar para o movimento vertical. Não faremos isso
-                            diretamente aqui, mas aconselho ler um dos livros recomendados. As equações do movimento na horizontal podem ser aplicadas na vertical e assim criar novas equações (leia Halliday - Mecânica Vol. 1).
+                            diretamente aqui, mas aconselho ler um dos livros recomendados. As equações do movimento na
+                            horizontal podem ser aplicadas na vertical e assim criar novas equações (leia Halliday -
+                            Mecânica Vol. 1).
                         </p>
                     </div>
                 </article>
 
-                <li class="lista1">
+                <li id="dinamica" class="lista1">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnfNuPgTA94Fo31Bxag88f1C9enk6jsnx_g&s"
                         class="img1">
                     <div style="display: flex; flex-direction: column; gap: 20px;">
@@ -289,7 +316,7 @@
                                 name="arrow-down-circle-outline"></ion-icon></button>
                     </div>
                 </li>
-                <li class="lista1">
+                <li id="termologia" class="lista1">
                     <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/2-sol.jpg" class="img1">
                     <div style="display: flex; flex-direction: column; gap: 20px;">
                         <div>
@@ -302,7 +329,7 @@
                                 name="arrow-down-circle-outline"></ion-icon></button>
                     </div>
                 </li>
-                <li class="lista1">
+                <li id="optica" class="lista1">
                     <img src="https://img.freepik.com/vetores-premium/fisica-optica-a-luz-branca-brilha-atraves-do-prisma_68708-37.jpg"
                         class="img1">
                     <div style="display: flex; flex-direction: column; gap: 20px;">
@@ -318,7 +345,7 @@
                                 name="arrow-down-circle-outline"></ion-icon></button>
                     </div>
                 </li>
-                <li class="lista1">
+                <li id="ondulatoria" class="lista1">
                     <img src="https://images.ecycle.com.br/wp-content/uploads/2021/11/25131522/anastasia-taioglou-CTivHyiTbFw-unsplash-scaled.jpg.webp"
                         class="img1">
                     <div style="display: flex; flex-direction: column; gap: 20px;">
@@ -334,7 +361,7 @@
                                 name="arrow-down-circle-outline"></ion-icon></button>
                     </div>
                 </li>
-                <li class="lista1">
+                <li id="eletricidade" class="lista1">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNncrkcG3V-2xJUuljYiJtIcmW5SDlofiyEw&s"
                         class="img1">
                     <div style="display: flex; flex-direction: column; gap: 20px;">

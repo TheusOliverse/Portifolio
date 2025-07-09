@@ -264,6 +264,44 @@ main {
     padding: 20px 30px;
 }
 
+
+
+.side{
+    transition: 1s;
+    overflow-y: auto;
+    z-index: 20;
+    position: fixed;
+    padding: 20px 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px black;
+    height: 100vh;
+}
+
+.opside{
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.062);
+    border: 2px solid rgba(120, 0, 164, 0);
+}
+
+.opside:hover{
+    transition: 0.3s;
+    border: 2px solid rgb(120, 0, 164);
+    background: rgba(136, 0, 255, 0.29);
+    animation: ani2 2s linear infinite;
+}
+
+.addside{
+    background: none;
+    border: none;
+}
+.add_side{
+    transition: 1s;
+    margin-left: -400px;
+}
+
 @media only screen and (orientation: portrait) {
     .hori {
         flex-wrap: wrap;
