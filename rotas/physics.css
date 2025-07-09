@@ -65,6 +65,7 @@ a {
 
 .sidebar {
     width: 100%;
+    gap: 200px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -256,8 +257,19 @@ main {
     gap: 20px;
 }
 
+.opcoesmid {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 30px;
+}
+
 @media only screen and (orientation: portrait) {
     .hori {
         flex-wrap: wrap;
+    }
+
+    .opcoesmid {
+        display: none;
     }
 }
