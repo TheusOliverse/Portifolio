@@ -60,3 +60,70 @@ function update() {
 }
 update();
 
+
+
+//Cinematica
+document.getElementById("assunto1").style.display = 'none';
+document.getElementById("cine2").style.display = 'none';
+function add_assunto1() {
+  document.getElementById("assunto1").style.display = '';
+  document.getElementById("cine").style.display = 'none';
+  document.getElementById("cine2").style.display = '';
+}
+
+function remove_assunto1() {
+  document.getElementById("assunto1").style.display = 'none';
+  document.getElementById("cine").style.display = '';
+  document.getElementById("cine2").style.display = 'none';
+}
+
+//Lançamento obliquo
+const canvas2 = document.getElementById('lo');
+const ctx2 = canvas2.getContext('2d');
+
+canvas2.width = window.innerWidth;
+canvas2.height = window.innerHeight;
+
+const bola = {
+  x: 50,
+  y: canvas2.height - 50,
+  vx: 8,
+  vy: -13,
+  radius: 10,
+  g: 0.2,
+};
+
+function drawBola(x, y) {
+  ctx2.beginPath();
+  ctx2.arc(x, y, bola.radius, 0, 2 * Math.PI);
+  ctx2.fillStyle = 'black';
+  ctx2.fill();
+}
+
+function update2() {
+  ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+
+  bola.x += bola.vx;
+  bola.y += bola.vy;
+  bola.vy += bola.g;
+
+  if (bola.y > canvas2.height - bola.radius) {
+    bola.y = canvas2.height - bola.radius;
+    bola.vy *= -0.8;
+  }
+
+  if (bola.x > canvas2.width) {
+    bola.x = 50;
+    bola.y = canvas2.height - 50;
+    bola.vx = 8;
+    bola.vy = -13;
+  }
+
+  drawBola(bola.x, bola.y);
+
+  requestAnimationFrame(update2);
+}
+
+update2();
+
+//deformação

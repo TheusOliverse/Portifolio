@@ -17,7 +17,8 @@
             <h1 class="anicolor2">Math</h1>
         </div>
         <div class="sidebar">
-            <div style="padding: 20px 30px; cursor: pointer;"><ion-icon style="font-size: 40px;" name="school-outline"></ion-icon></div>
+            <div style="padding: 20px 30px; cursor: pointer;"><ion-icon style="font-size: 40px;"
+                    name="school-outline"></ion-icon></div>
             <div style="display: flex; align-items: center; gap: 30px; padding: 20px 30px;">
                 <a href="#desc">Descrição</a>
                 <a href="#math" style="color: red;">Math</a>
@@ -26,10 +27,6 @@
             </div>
         </div>
     </header>
-
-    <div>
-        <h1 style="color: red; display: flex; justify-content: center; width: 100%;">Alerta! - Estarei preenchendo com conteúdo em breve.</h1>
-    </div>
 
     <main>
         <section class="desc" id="desc">
@@ -40,7 +37,7 @@
                 </h1>
                 <div style="width: 100%; background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
             height: 5px;"> </div>
-                <p class="para">Durante os séculos os maiores nomes desenvolveram ótimas descrições matemáticas, o que
+                <p class="para">Durante os séculos os maiores nomes desenvolveram ótimas descrições matemática, o que
                     contribuiu com o avanço da física e mudou a forma como todos viam o mundo. O cálculo diferencial
                     possui um grande destaque, tendo até mesmo relatos de briga pelo direito de ser o criador deste
                     assunto. O livro "A Guerra do Cálculo" mostra exatamente este lado da história que revolucionou o
@@ -113,10 +110,170 @@
                                 matemática do movimento, incluindo conceitos como posição, velocidade e aceleração.
                             </p>
                         </div>
-                        <button class="but anicolor1">Ver mais<ion-icon style="font-size: 20px;" class="anicolor1"
+
+                        <button onclick="add_assunto1()" class="but anicolor1" id="cine">Ver mais<ion-icon
+                                style="font-size: 20px;" class="anicolor1"
                                 name="arrow-down-circle-outline"></ion-icon></button>
+
+                        <button class="but anicolor1" id="cine2" onclick="remove_assunto1()">Ver menos<ion-icon
+                                class="anicolor1" style="font-size: 20px;"
+                                name="arrow-up-circle-outline"></ion-icon></button>
                     </div>
                 </li>
+                <article id="assunto1" class="assunto1">
+                    <div style="display: flex; flex-direction: column; gap: 40px;">
+                        <h1 class="anicolor1" style="font-size: 26px;">O que é movimento?</h1>
+                        <p class="filtroP">
+                            Movimento é a mudança de posição de um objeto em relação a um <i
+                                class="anicolor3">referencial</i> ao
+                            longo do tempo. Mas... O que é <i class="anicolor3">referencial</i>? Um <i
+                                class="anicolor3">referencial</i> é algo que podemos usar para sabermos se um corpo está
+                            em movimento ou não. Pode ser um objeto, um carro, o próprio chão, ou até você mesmo.
+                        </p>
+                        <p class="filtroP">
+                            Por exemplo: se você estiver sentado em um barco em movimento, você estará parado em relação
+                            ao barco. Porém, o barco estará em movimento em relação a água.
+                        </p>
+                        <p>
+                            Outro exemplo: ao caminhar, você sabe que está em movimento porque a sua posição muda todo o
+                            tempo. Se você sai de casa para ir ao shopping, você se movimentou em relação ao chão paraa
+                            chegar em determinado destino.
+                        </p>
+                        <h1 class="anicolor1" style="font-size: 26px;">O que é velocidade?</h1>
+                        <p>
+                            Velocidade é um conceito da física que determina o quanto um <i class="anicolor3">corpo</i>
+                            pode percorrer em um instante de <i class="anicolor3">tempo</i>. Aliás, "<i
+                                class="anicolor3">corpo</i>" é o nome que damos para um objeto em movimento (carro,
+                            pessoa, etc.); "<i class="anicolor3">tempo</i>" é uma medida da duração de eventos e da
+                            sequência em
+                            que ocorrem.
+                        </p>
+                        <p>
+                            Podemos medir a velocidade de um corpo apenas dividindo o espaço percorrido pelo tempo em
+                            que esse corpo levou para percorrer. Por exemplo: eu andei 10 metros em 5 segundo; posso
+                            dividir 10 metros por 5 segundo, o que resulta em 10m / 5s = 2m/s, ou seja, a minha
+                            velocidade é 2 metros por segundo.
+                        </p>
+                        <p>
+                            Um outro exemplo: um carro de fórmula 1 percorreu uma pista de 100km em uma hora (1h), então
+                            a sua velocidade pode ser obtida pela divisão 100km / 1h = 100km/h, ou seja, 100 quilômetros
+                            por hora. Desta forma, podemos definir uma equação para qualquer caso:
+                        </p>
+                        <div class="hori">
+                            <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/formula-velocidade-media.jpg"
+                                class="img2">
+                            <h1>Esta é a equação da <i class="anicolor3">velocidade média</i>, onde "Vm" é a velocidade
+                                média, delta S é o espaço percorrido e delta t é o tempo. Você apenas precisa fazer a
+                                divisão para chegar ao resultado.</h1>
+                        </div>
+                        <p>
+                            Outras expressões podem apareccer nos livros de Física, como V = Vo + at (expressão) ou S =
+                            So + vt (expressão 2). Fique tranquilo, estas são apenas outras formas da equação da
+                            velocidade. A expressão 1 relaciona velocidade, tempo e <i class="anicolor3">aceleração</i>;
+                            a expressão 2 relaciona espaço, velocidade e tempo.
+                        </p>
+                        <p>
+                            Cada expressão é importante para uma determinada situação. Perceba que a expressão 1 é
+                            diferente da expressão 2, mas ambas se comunicam através da velocidade.
+                        </p>
+                        <h1 class="anicolor1" style="font-size: 26px;">O que é aceleração?</h1>
+                        <p>
+                            De forma bem resumida, aceleração é a velocidade da velocidade. Isso pode parecer confuso,
+                            mas na verdade a aceleração mede o quanto a velocidade aumentou em um determinado tempo.
+                        </p>
+                        <p>
+                            Por exemplo: uma Ferrari vai de 0km/h a 144km/h em 5 segundos. Se a Ferrari teve um aumento
+                            de velocidade (saindo do 0 para 100), em 5 segundos, podemos concluir que a velocidade da
+                            Ferrari será 288km/h 10 segundos após ter saído da largada. Isso faz sentido para você? A
+                            velocidade e o
+                            tempo apenas duplicaram.
+                        </p>
+                        <p>
+                            Neste exemplo, podemos dizer que a Ferrari está com a sua velocidaed aumentando a cada
+                            segundo. Como podemos saber isso de forma exata? É bem simples, basta dividir a velocidade
+                            pelo tempo: 144km/h / 5s = 40m/s / 5s = 20m/s². Portanto, a aceleração da Ferrari é 20m/s²,
+                            ou seja, a velocidade da Ferrari vai aumentar 20m/s a cada segundo.
+                        </p>
+                        <p>
+                            Assim como a velocidade, a expressão matemática que define a aceleração média pode ser dada
+                            por:
+                        </p>
+                        <div class="hori">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWZwVkMEAfWIbAQhUQrL17pfhRnCQ16T7BfMD-YFmD0AL4r847NWRqUHKtIegecppazk3QuoVfLm0g175Ph4gZisMzKMt3yj91fw-qN6YEPG1TJWMjAOALhUKZl5Q70JaVZqOL64RSqjU/s1600/acel1c.png"
+                                class="img2">
+                            <h1>Observe que "alfa m" é a aceleração, delta v a velocidade, e delta t o tempo. Esta
+                                expressão é importante na física pois é através do conceito de aceleração que
+                                conseguimos calcular a <i class="anicolor3">gravidade</i>.</h1>
+                        </div>
+                        <p>
+                            Com o conhecimento obtido até agora, podemos utilizar expressões para outros casos. Podemos
+                            utilizar expressões que relaciona posição, tempo, aceleração, velocidade inicial e posição
+                            inicial, ou que relacione velocidade, velocidade inicial, aceleração e espaço. Por que isso?
+                            Porque Algumas expressões tem algo que outra não possui, como a equação do MRUV (Movimento
+                            Retilíneo Uniformemente Variado) e a equação de Torricelli. A equação de Torricelli não
+                            possui tempo, por exemplo.
+                        </p>
+                        <div
+                            style="display: flex; flex-direction: column; gap: 20px; align-items: center; justify-content: center;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvaXhSxvdLvX6ZE-kP7BHz3dG9UiTnW5-MpL2_ehU7DWJyx2Ii3JErm5AHxfTMqeUyuOE&usqp=CAU"
+                                class="dest" width="200px" height="150px">
+                            <h1>(1)Função horária de velocidade, (2)Equação de Torricelli, (3)Função horária da posição.
+                            </h1>
+                        </div>
+                        <h1 class="anicolor1" style="font-size: 26px;">O que é a gravidade?</h1>
+                        <p>
+                            A gravidade pode ser considerada, na mecânica clássica, como uma força que atrai as coisas
+                            para o centro de um planeta, estrela, etc.. Na Relatividade Geral, a gravidade é a geometria
+                            do espaço-tempo, como se todo o universo estivesse encima de um tecido elástico, onde o
+                            tecido se deforma na presença de massa.
+                        </p>
+                        <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2025/05/ilustracao-representativa-da-deformacao-do-tecido-espaco-tempo.jpg"
+                            style="width: 300px; height: 150px; border-radius: 20px;" class="dest">
+                        <p>
+                            Existem muitos casos interessantes sobre a gravidade, mas estes dois são suficientes: (1)
+                            Galilel Galilei subiu até o topo da Torre de Pisa para provar que, independente da massa, os
+                            corpos caem com a mesma aceleração. (2) A Lei da Gravitação Universal foi formulada por
+                            Newton, uma equação que mostra que a intensidade da força gravitacional depende do raio, da
+                            massa e de uma constante G. Este assunto será abordado com mais detalhes na seção de
+                            Dinâmica. Por enquanto, o conhecimento sobre a gravidade nos é útil para cpmpreender a "<i
+                                class="anicolor3">queda livre</i>" e o "<i class="anicolor3">lançamento oblíquo</i>",
+                            que são assuntos de suma importância.
+                        </p>
+                        <h1 class="anicolor1" style="font-size: 26px;">Queda Livre & Lançamento Oblíquo</h1>
+                        <p>
+                            <i class="anicolor3">Queda Livre</i> é o nome dado a um objeto que foi "largado no ar". Você
+                            pode deixar uma maçã em queda livre se soltar ela no ar. Um outro exemplo é o salto de
+                            paraquedas.
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8iakbfxCtZWsCkT5HGnO-r4vqCaSvXYU2jA&s"
+                                style="width: 300px; height: 150px; border-radius: 20px;" class="dest">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTTNIN90A-bULjkkE-eeGI0lWnQ8Z1aiwNIg&s"
+                                style="width: 300px; height: 150px; border-radius: 20px;" class="dest">
+                        </div>
+                        <p>
+                            Na primeira foto temos o Bungee Jump, que também mostra a queda livre. A segunda foto mostra
+                            o salto de paraquedas.
+                        </p>
+                        <p>
+                            <i class="anicolor3">Lançamento Oblíquo</i> é o nome dado ao movimento feito após arremessar
+                            um objeto. Um exemplo disso é o chute em uma bola, que gera uma parábola como movimento.
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                            <canvas id="lo" class="lo"></canvas>
+                            <img style="border-radius: 20px;"
+                                src="https://content.prodigioeducacao.com/prodigio/upload/04538ac5-f3e2-48c3-9e91-0e3f86cfdd3b.jpeg"
+                                width="300px" height="150px" class="dest">
+                        </div>
+                        <p>
+                            Utilizando a expressão do MRUV, podemos adapatar para o movimento vertical. Não faremos isso
+                            diretamente aqui, mas aconselho ler um dos livros recomendados. As equações do movimento na horizontal podem ser aplicadas na vertical e assim criar novas equações (leia Halliday - Mecânica Vol. 1).
+                        </p>
+                    </div>
+                </article>
+
                 <li class="lista1">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnfNuPgTA94Fo31Bxag88f1C9enk6jsnx_g&s"
                         class="img1">
