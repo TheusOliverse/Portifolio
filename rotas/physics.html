@@ -26,16 +26,16 @@
                 <a href="#physics">Physics</a>
                 <a href="#livros" style="color: red;">Livros</a>
             </div>
-            <button class="addside" id="addside">
+            <button style="cursor: pointer;" class="addside" id="addside">
                 <ion-icon style="font-size: 40px; padding: 20px;" name="menu-outline"></ion-icon>
             </button>
         </div>
-
         <div id="side" class="side add_side">
             <ul style="display: flex; flex-direction: column; gap: 20px;">
+                <button class="closenavbar" onclick="closenavbar()">X</button>
                 <h1 class="anicolor3">Tópicos</h1>
                 <li style="display: flex; flex-direction: column; gap: 10px; padding: 0px 15px;">
-                    <a class="opside filtroB href=" #desc">Descrição</a>
+                    <a class="opside filtroB" href="#desc">Descrição</a>
                     <a class="opside filtroB" href="#math" style="color: red;">Math</a>
                     <a class="opside filtroB" href="#physics">Physics</a>
                     <a class="opside filtroB" href="#livros" style="color: red;">Livros</a>
@@ -124,6 +124,61 @@
                 Observe os itens abaixo e tente compreender a leitura.
             </p>
             <ul class="org2">
+                <li id="grandezas" class="lista1">
+                    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2024/12/exemplo-de-tornado.jpg" /.
+                        class="img1">
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div>
+                            <h1 style="padding: 0px 10px;" class="anicolor1">Grandezas</h1>
+                            <p class="filtroP" style="padding: 10px;">
+                                Grandezas são propriedades ou características que podem ser medidas ou quantificadas em
+                                um sistema ou fenômeno físico. Elas são fundamentais para a descrição e análise de
+                                muitos fenômenos naturais.
+                            </p>
+                        </div>
+
+                        <button onclick="add_assunto2()" class="but anicolor1" id="grand">Ver mais<ion-icon
+                                style="font-size: 20px;" class="anicolor1" name="arrow-down-circle-outline"></ion-icon>
+                        </button>
+
+                        <button class="but anicolor1" id="grand2" onclick="remove_assunto2()">Ver menos<ion-icon
+                                class="anicolor1" style="font-size: 20px;" name="arrow-up-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+                </li>
+                <article id="assunto2" class="assunto2">
+                    <div style="display: flex; flex-direction: column; gap: 40px;">
+                        <h1 class="anicolor1" style="font-size: 26px;">Grandeza Escalar</h1>
+                        <p class="filtroP">
+                            Uma grandeza escalar é uma quantidade física que pode ser descrita por um valor numérico e
+                            uma unidade, sem necessidade de especificar uma direção. Por exemplo: a temperatura é uma
+                            grandeza escalar simplesmente por fornecer apenas um número, ao lado de uma unidade de
+                            medida (Celsius, Fahrenheit, Kelvin, etc.). Portanto, uma grandeza escalar é apemas uma
+                            informação simples.
+                        </p>
+                        <h1 class="anicolor1" style="font-size: 26px;">Grandeza Vetorial</h1>
+                        <p class="filtroP">
+                            Uma grandeza vetorial possui um <i class="anicolor3">módulo</i>, uma <i
+                                class="anicolor3">direção</i>, e um <i class="anicolor3">sentido</i>. O <i
+                                class="anicolor3">módulo</i> é o valor da intensidade da grandeza; a <i
+                                class="anicolor3">direção</i> é para onde a grandeza está indo; o <i
+                                class="anicolor3">sentido</i> define até onde esta grandeza irá.
+                        </p>
+                        <p>
+                            Por exmplo: imagine que você está levantando uma caixa para guardar no armário. Neste
+                            exemplo, você está aplicando uma <i class="anicolor3">força</i> para levantar a caixa, a
+                            caixa está indo <b class="anicolor3">para cima</b> (direção), e ela irá para <b
+                                class="anicolor3">dentro do armário</b> (sentido). Aqui, a <i
+                                class="anicolor3">força</i> é a grandeza vetorial.
+                        </p>
+                        <p>
+                            Da mesma forma é a força gravitacional. Ela possui um módulo de, aproximadamente, 9.8 metros
+                            por segundo ao quadrado, ela está atraindo para baixo, e faz com que os objetos vão para o
+                            centro do planeta. Como a gravidade é uma aceleração, podemos concluir que a aceleração é
+                            uma grandeza vetorial.
+                        </p>
+                    </div>
+                </article>
                 <li id="cinematica" class="lista1">
                     <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/XH3ZREXEBRCAXMJEGDRN7G4N3U.jpg"
                         class="img1">
@@ -161,7 +216,7 @@
                         </p>
                         <p>
                             Outro exemplo: ao caminhar, você sabe que está em movimento porque a sua posição muda todo o
-                            tempo. Se você sai de casa para ir ao shopping, você se movimentou em relação ao chão paraa
+                            tempo. Se você sai de casa para ir ao shopping, você se movimentou em relação ao chão para
                             chegar em determinado destino.
                         </p>
                         <h1 class="anicolor1" style="font-size: 26px;">O que é velocidade?</h1>
@@ -285,9 +340,7 @@
                             <i class="anicolor3">Lançamento Oblíquo</i> é o nome dado ao movimento feito após arremessar
                             um objeto. Um exemplo disso é o chute em uma bola, que gera uma parábola como movimento.
                         </p>
-                        <div
-                            style="display: flex; align-items: center; gap: 30px; justify-content: center; flex-wrap: wrap;">
-                            <canvas id="lo" class="lo"></canvas>
+                        <div style="display: flex; align-items: center; gap: 30px; justify-content: center; flex-wrap: wrap;">
                             <img style="border-radius: 20px;"
                                 src="https://content.prodigioeducacao.com/prodigio/upload/04538ac5-f3e2-48c3-9e91-0e3f86cfdd3b.jpeg"
                                 width="300px" height="150px" class="dest">
@@ -300,7 +353,6 @@
                         </p>
                     </div>
                 </article>
-
                 <li id="dinamica" class="lista1">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJnfNuPgTA94Fo31Bxag88f1C9enk6jsnx_g&s"
                         class="img1">
@@ -379,10 +431,6 @@
                     </div>
                 </li>
             </ul>
-
-            <article id="grandeza" class="grandezas">
-
-            </article>
         </section>
     </main>
 

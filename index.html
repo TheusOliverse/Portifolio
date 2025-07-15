@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <video style="filter: blur(10px);" class="bgvid2" src="bg/fleeting-glides.1920x1080.mp4" plays-inline loop autoplay
+    <video id="bgvideo2" style="filter: blur(10px);" class="bgvid2" src="bg/fleeting-glides.1920x1080.mp4" plays-inline loop autoplay
     muted type="video/mp4"></video>
 
     <div id="fundo" class="fundo"></div>
 
     <nav>
-        <video class="bgvid" src="bg/black-hole-in-cosmos.1920x1080.mp4" plays-inline loop autoplay muted type="video/mp4"></video>
+        <video id="bgvideo1" class="bgvid" src="bg/black-hole-in-cosmos.1920x1080.mp4" plays-inline loop autoplay muted type="video/mp4"></video>
 
         <header id="header">
             <div class="container">
@@ -63,7 +63,13 @@
                         <a class="linkop" href="https://youtube.com/@math_oliver?feature=shared"
                             target="_blank"><ion-icon class="iconop" name="logo-youtube"></ion-icon></a>
                     </div>
-                    <div class="sidebar">
+                    <div id="opbg" class="sidebar">
+                        <button onclick="addbg()" id="addbg" style="background: none; border: none; cursor: pointer;">
+                            <ion-icon id="butvid1" class="butvid1" style="font-size: 30px;" name="eye-off-outline"></ion-icon>
+                        </button>
+                        <button onclick="removebg()" id="addbg2" style="background: none; border: none; cursor: pointer;">
+                            <ion-icon id="butvid1" class="butvid1" style="font-size: 30px;" name="eye-off-outline"></ion-icon>
+                        </button>
                         <button onclick="addside()" style="background: none; border: none; cursor: pointer;">
                             <ion-icon style="font-size: 30px; color: white;" name="menu-outline"></ion-icon>
                         </button>
@@ -186,6 +192,7 @@
         </div>
 
         <div style="width: 100%; background: linear-gradient(180deg, black, rgba(6, 0, 0, 0)); height: 70px;"></div>
+        
         <main class="main" id="main">
             <section class="sobre" id="sobre">
                 <h2 id="ola" style="display: flex; align-items: center; gap: 5px;" class="size_text2">Olá, visitante!

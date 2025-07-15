@@ -311,3 +311,19 @@ main {
         display: none;
     }
 }
+
+.closenavbar{
+    background: rgba(255, 255, 255, 0.211);
+    border: 2px solid red;
+    padding: 4px;
+    border-radius: 50%;
+    position: fixed;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    left: 180px;
+    top: 10px;
+    cursor: pointer;
+}

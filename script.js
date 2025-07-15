@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("header").style.backgroundColor = '';
         document.getElementById("icon_animado").classList.remove("icon_animado2");
         document.getElementById("dev").classList.add("dev2");
-    } else{
+    } else {
         document.getElementById("role").classList.add("role_ani");
         document.getElementById("titulo").classList.add("titulo2");
         document.getElementById("header").style.transition = '1s';
@@ -181,3 +181,28 @@ window.addEventListener('scroll', () => {
         document.getElementById("fundo").classList.remove("fundo2");
     }
 })
+
+//remove bg
+const bg_video = document.getElementById("bgvideo1");
+const bg_video2 = document.getElementById("bgvideo2");
+const addbg1 = document.getElementById("addbg").style;
+const addbg2 = document.getElementById("addbg2").style;
+
+addbg1.display = 'none';
+
+function removebg() {
+    bg_video.style.display = 'none';
+    bg_video2.style.display = 'none';
+    addbg1.display = '';
+    addbg2.display = 'none';
+    document.getElementById("header").classList.add("bgimage1");
+    document.getElementById("main").classList.add("bg2")
+}
+
+function addbg() {
+    bg_video.style.display = '';
+    bg_video2.style.display = '';
+    addbg1.display = 'none';
+    addbg2.display = '';
+    document.getElementById("header").classList.remove("bgimage1")
+}
