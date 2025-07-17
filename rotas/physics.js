@@ -84,7 +84,7 @@ add_side.addEventListener('click', () => {
 })
 
 //Grandezas
-document.getElementById("assunto2").style.display = 'none';
+document.getElementById("assunto2").style.display = '';
 document.getElementById("grand2").style.display = 'none';
 function add_assunto2() {
   document.getElementById("assunto2").style.display = '';
