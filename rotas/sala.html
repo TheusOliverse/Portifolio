@@ -1,14 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala</title>
     <link rel="icon" href="https://www.svgrepo.com/show/402545/radioactive.svg">
+    <link rel="stylesheet" href="styles/sala.css">
 </head>
+
 <body>
-    <header>
-        
+    <header id="header" class="header">
+        <div class="tit">
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="display: flex; flex-direction: column;">
+                    <h1 class="fontT">SALA DE LIVROS &</h1>
+                    <h1 class="fontT"><b style="color: red; filter: drop-shadow(0 0 5px red);">DRIVE</b> PARA TODOS</h1>
+                </div>
+                <p style="color: rgba(255, 255, 255, 0.523);">Acesse livros que irão lhe ajudar no seu aprendizado.</p>
+                <div style="display: flex; gap: 30px; padding: 0px 40px;">
+                    <a href="#iniciar" class="butstart1">Começar</a>
+                    <a class="butstart2" href="#destaque">Destaque</a>
+                </div>
+            </div>
+            <div class="barra_op sumir">
+                <a href="#xadrez" class="but_op1"><i>Xadrez</i></a>
+                <a class="but_op1"><i>Exatas</i></a>
+                <button class="but_op1"><i>Humanas</i></button>
+                <button class="but_op1"><i>Engenharia</i></button>
+                <button class="but_op1"><i>Programação</i></button>
+                <button class="but_op1"><i>Saúde</i></button>
+                <button class="but_op1"><i>Vestibular</i></button>
+            </div>
+            <div class="content sumir">
+                <ul style="list-style-type: none; display: flex; gap: 20px; overflow-x: auto;">
+                    <a class="link_item" href="">
+                        <li class="item img_item-1"
+                            style="background-image: url(https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2022/02/184-Historia-do-Brasil-em-ordem-cronologica.jpg);">
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <p class="cat1">DRIVE</p>
+                                <p class="cat2">PDF</p>
+                            </div>
+                            <h3 class="dest filterP">História</h3>
+                        </li>
+                    </a>
+                    <a class="link_item" href="">
+                        <li class="item img_item-1"
+                            style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSQZuhuGwD4YhK5zMtSY5bDXVprFOFMljIfQ&s);">
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <p class="cat1">DRIVE</p>
+                                <p class="cat2">PDF</p>
+                            </div>
+                            <h3 class="dest filterP">Quântica</h3>
+                        </li>
+                    </a>
+                    <a class="link_item" href="">
+                        <li class="item img_item-1"
+                            style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrp7cNrn5efaNfnMuB6C-QFw5PwU-E8FH8Zw&s);">
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <p class="cat1">DRIVE</p>
+                                <p class="cat2">PDF</p>
+                            </div>
+                            <h3 class="dest filterP">Astronomia</h3>
+                        </li>
+                    </a>
+                    <a class="link_item" href="">
+                        <li class="item img_item-1"
+                            style="background-image: url(https://www.conjur.com.br/wp-content/uploads/2024/03/1507-300x200.jpg);">
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <p class="cat1">DRIVE</p>
+                                <p class="cat2">PDF</p>
+                            </div>
+                            <h3 class="dest filterP">Investigação</h3>
+                        </li>
+                    </a>
+                    <a class="link_item" href="">
+                        <li class="item img_item-1"
+                            style="background-image: url(https://media.licdn.com/dms/image/v2/D5612AQGkbKymt0zoWw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1674890650192?e=2147483647&v=beta&t=yshwNsMTu2T5g3P0rEaymrObtbCkFZGDk-MbHK5Rguw);">
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <p class="cat1">DRIVE</p>
+                                <p class="cat2">PDF</p>
+                            </div>
+                            <h3 class="dest filterP">Mercado</h3>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="imgdiv1">
+            <img width="70%" height="100%" class="sumir" src="https://i.ytimg.com/vi/ZDYSmMiC9TE/maxresdefault.jpg">
+            <div class="degrade1 sumir"></div>
+            <div class="degrade2 sumir"></div>
+        </div>
+        <div class="navbar">
+            <div>
+                <button class="namecant" style="display: flex;">
+                    <h1>As</h1>
+                    <h1>ter</h1>
+                </button>
+            </div>
+            <div class="sumir disp">
+                <a href="">Inicio</a>
+                <a href="">Cursos</a>
+                <a href="">Drive</a>
+                <a href="">Escrita</a>
+                <a href="">Livros</a>
+            </div>
+            <div class="sumir disp">
+                <a href="">GitHub</a>
+                <a href="">Instagram</a>
+                <a href="">YouTube</a>
+            </div>
+            <button class="add_side" style="background: none; border: none; font-size: 35px;">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </button>
+        </div>
     </header>
+
+    <div
+        style="width: 100%; height: 100px; display: flex; align-items: center; justify-content: center; background: black;">
+        <h3><i>Desenvolvido por Aster</i></h3>
+    </div>
+
+    <main id="iniciar" class="main">
+        <section id="fisica" class="section1">
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <h1 style="font-size: 30px;">Acesse o Drive completo</h1>
+                <a style="border: 2px solid red; padding: 2px 5px; border-radius: 20px;" href="">
+                    <h3>Ver completo</h3>
+                </a>
+            </div>
+            <p>Você também pode acessar Physics & Math, o cantinho da Física! Lá está sendo escrito resumos de toda a
+                Física. <a style="color: rgb(0, 106, 255);" href="">Clique aqui!</a></p>
+        </section>
+
+        <section id="destaque" class="section1">
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <h1 style="font-size: 30px;">Destaque</h1>
+            </div>
+            <ul style="list-style-type: none; display: flex; gap: 40px; flex-wrap: wrap;">
+                <a href=""
+                    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROxrEI0hE2UtIyJDJtemI_bjY_3pzDMVMEDA&s);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://m.media-amazon.com/images/I/714LTdRGfrL._UF1000,1000_QL80_.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://ra-content-prod.s3.sa-east-1.amazonaws.com/Book/10.png?v=1572017943326);"
+                    class="item_sec">
+                </a>
+                <a href="" style="background-image: url(https://m.media-amazon.com/images/I/91HWzzvvoML.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://m.media-amazon.com/images/I/71ln4nhETiL._UF1000,1000_QL80_.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/60/Newton-Principia-Mathematica_1-500x700.jpg);"
+                    class="item_sec">
+                </a>
+            </ul>
+        </section>
+
+        <section id="destaque" class="section1">
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <h1 style="font-size: 30px;">Breve para começar</h1>
+            </div>
+            <p>Esta é a web biblioteca LECP (Livros Educacionais e Conhecimento Priorizado), um lugar para você ler
+                livros difíceis de encontrar. Toda a bilioteca está contida em drives, o que torna este site apenas um
+                guia, como um sumário. Aproveite!</p>
+            <div
+                style="display: flex; gap: 30px; align-items: center; justify-content: center; width: 100%; flex-wrap: wrap;">
+                <ul
+                    style="list-style-type: none; display: flex; gap: 20px; align-items: center; justify-content: start; flex-wrap:wrap;">
+                    <li class="mot">
+                        <h1>Propósito</h1>
+                        <p>Este site foi criado para o bem e com objetvo de ajudar os estudantes.</p>
+                    </li>
+                    <li class="mot">
+                        <h1>Estética</h1>
+                        <p>O design foi pensado em aplicações de filmes, mas com livros sendo o conteúdo.</p>
+                    </li>
+                    <li class="mot">
+                        <h1>Dúvidas</h1>
+                        <p>Em caso de dúvidas, mande uma mensagem! A sua ideia também possui valor.</p>
+                    </li>
+                </ul>
+                <div>
+                    <h1>Sobre os livros</h1>
+                    <p style="max-width: 450px;">Muitos alunos não tem condições de comprar livros, ou não moram próximo
+                        de uma biblioteca, então seria justo entregar de forma virtual o material que eles procuram. O
+                        conhecimento é para todos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="xadrez" class="section1">
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <h1 style="font-size: 30px;">Xadrez</h1>
+                <a style="border: 2px solid red; padding: 2px 5px; border-radius: 20px;" href="">
+                    <h3>Ver outros</h3>
+                </a>
+            </div>
+            <ul style="list-style-type: none; display: flex; gap: 40px; flex-wrap: wrap;">
+                <a href="" style="background-image: url(https://m.media-amazon.com/images/I/41cyuqFCq5L._SL500_.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://cdn.kobo.com/book-images/ec603136-c8ee-4ee2-85ae-d724a0ad7091/353/569/90/False/paul-morphy-the-chess-champion.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://m.media-amazon.com/images/I/61Vh5KkAykL._UF1000,1000_QL80_.jpg);"
+                    class="item_sec">
+                </a>
+            </ul>
+        </section>
+
+        <section id="fisica" class="section1">
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <h1 style="font-size: 30px;">Exatas</h1>
+                <a style="border: 2px solid red; padding: 2px 5px; border-radius: 20px;" href="">
+                    <h3>Ver outros</h3>
+                </a>
+            </div>
+
+            <ul style="list-style-type: none; display: flex; gap: 40px; flex-wrap: wrap;">
+                <a href=""
+                    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYHCMedv7jfcPAG5CgrU47ofl77Q2YVS_HQ&s);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://zonadaeletrica.com.br/wp-content/uploads/2019/09/fisica-basica-vol-moyses-nussenzveig-4ed-213x300.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCcBAFhdfzAcdW0XDwqXif0SBk6ic5fPEWHQ&s);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://m.media-amazon.com/images/I/71KGGRF6WTL._UF1000,1000_QL80_.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwLo9EzLTRtAC0r5fg-ecvxQHTYukW8zT14g&s);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://lojasebocultural.com.br/wp-content/uploads/2023/09/abfa206c-6e9d-400c-8057-fda018685da8.jpg);"
+                    class="item_sec">
+                </a>
+            </ul>
+        </section>
+
+        <section id="fisica" class="section1">
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <h1 style="font-size: 30px;">Programação</h1>
+                <a style="border: 2px solid red; padding: 2px 5px; border-radius: 20px;" href="">
+                    <h3>Ver outros</h3>
+                </a>
+            </div>
+            <ul style="list-style-type: none; display: flex; gap: 40px; flex-wrap: wrap;">
+                <a href=""
+                    style="background-image: url(https://m.media-amazon.com/images/I/51MiiB5zCaL._UF1000,1000_QL80_.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://images-americanas.b2w.io/produtos/111052655/imagens/livro-algoritmos-teoria-e-pratica/111052655_1_large.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://m.media-amazon.com/images/I/71wqyrkRUHL._UF1000,1000_QL80_.jpg);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbof0JHtVVSfrfldVMIBp5B5jnK4d5jWGONQ&s);"
+                    class="item_sec">
+                </a>
+                <a href=""
+                    style="background-image: url(https://books.google.com.br/books/content?id=rtBvl_L-1mcC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71uFmcg0TDxGuDYDJk5ASadOJzPaqdkO1gbcLR5dKZbMSfdBaBKAfp-_6In6uR-yg7KbeJ0PYxvZFOSyMMg0Dl1nDvvKKtnFs7PchV_EFSL49sHIlAnK6jHKO86LB2eC9yaiz5B);"
+                    class="item_sec">
+                </a>
+                <a href="" style="background-image: url(https://m.media-amazon.com/images/I/71X7hMhMEUL.jpg);"
+                    class="item_sec">
+                </a>
+            </ul>
+        </section>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/sala.js"></script>
 </body>
+
 </html>
