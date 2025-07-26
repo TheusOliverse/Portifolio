@@ -189,8 +189,8 @@ a:hover {
 .item_sec {
     transition: 0.3s;
     background: rgb(255, 255, 255);
-    width: 160px;
     border-radius: 5px;
+    width: 160px;
     height: 220px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -244,7 +244,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    z-index: 2; 
+    z-index: 2;
     padding: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px black;
@@ -255,22 +255,24 @@ main {
     overflow-y: auto;
 }
 
-.fside{
+.fside {
     display: none;
 }
 
-.filterB{
+.filterB {
     filter: drop-shadow(0 0 5px white);
 }
 
-.fechar_side{
+.fechar_side {
     background: rgba(255, 0, 0, 0.424);
     box-shadow: 0 0 5px black;
     border: black;
 }
-.colorb{
+
+.colorb {
     color: black;
 }
+
 @media (max-width: 768px) and (orientation: portrait) {
     .add_side {
         display: flex;
@@ -312,5 +314,10 @@ main {
 
     .op_azul {
         justify-content: center;
+    }
+
+    .item_sec {
+        width: 100px;
+        height: 130px;
     }
 }
